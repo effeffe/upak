@@ -1,0 +1,16 @@
+C$PROG CASEUP4
+      SUBROUTINE CASEUP4(IBY)
+C
+      BYTE  IBY(4),IT
+C
+      BYTE  X61,X7A,X20
+C
+      DATA  X61,X7A,X20/Z'61',Z'7A',Z'20'/
+C
+      DO 20 I=1,4
+      IT=IBY(I)
+      IF(IT.LT.X61.OR.IT.GT.X7A) GO TO 20
+      IBY(I)=IT-X20
+   20 CONTINUE
+      RETURN
+      END

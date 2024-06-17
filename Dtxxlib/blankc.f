@@ -1,0 +1,15 @@
+C$PROG BLANKC
+C
+      SUBROUTINE BLANKC(IWD,IA,IB)
+C
+      INTEGER*4 IWD(*)
+C
+      INTEGER*4  X20
+C
+      DATA       X20/Z'20'/
+C
+      DO 10 I=IA,IB
+      CALL ISBYTE(X20,IWD,I-1)
+   10 CONTINUE
+      RETURN
+      END

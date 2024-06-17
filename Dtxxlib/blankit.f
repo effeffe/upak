@@ -1,0 +1,13 @@
+C$PROG BLANKIT
+C
+      SUBROUTINE BLANKIT(IWD,NW)
+C
+      INTEGER*4 IWD(*)
+      integer*4 X20202020
+      data X20202020 /Z'20202020'/
+C
+      DO 10 I=1,NW
+      IWD(I)=X20202020
+   10 CONTINUE
+      RETURN
+      END
